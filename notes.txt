@@ -37,11 +37,16 @@ Origins
 Powers
 	Athletic (+2)
 	| you have overall better stats. (+2)
+	Artificial (-4)
+	| You do not naturally regenerate hp (-5)
+	| You are immune to most status effects (+1)
 	Bioweapon (-1)
 	| Villagers fear you. (-1)
 	Bloodbath (+2)
 	| You have a Slaughter meter, every kill fills the meter. (+0)
 	| The higher the meter, the stronger you get. (+2)
+	Brick-like
+	| You sink like a brick.
 	Climber
 	| You can climb surfaces. (+2)
 	Magical (-4)
