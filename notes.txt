@@ -12,34 +12,46 @@ Origins
 	| ---- Magical
 	| - Bioweapon
 
+	Fae
+	| ++++ C-flight
+	| +++ Micro-sized
+	| ++ Contract beast
+	| -- Weak
+	| --- Squishable
+	| ---- Magical
+
 	Lhurgoyf
 	| ++ Bloodbath
-	| / Large
+	| +++ Levels to power
+	| - Large
 	| -- Weak
+	| -- Magic-bound
 	
 	Antling
 	| +++ Micro-sized
 	| ++ Climber
+	| / Arthropod
 	| -- Weak
 	| --- Squishable
 	
 	Warforged
-	| +++ Harder
-	| +++ Better
-	| +++ Faster
-	| +++ Stronger
+	| ++++ Herculean
+	| ++++ Built like a tank
 	| ++ Living furnace
 	| + Repairable
-	| ---- Artificial
+	| -8 Artificial
 	| --- Brick-like
-	| 
 
 Powers
 	Athletic (+2)
 	| you have overall better stats. (+2)
-	Artificial (-4)
+	Artificial (-8)
 	| You do not naturally regenerate hp (-5)
-	| You are immune to most status effects (+1)
+	| You are immune to many status effects (+1)
+	| You cannot eat (-4)
+	| You have an Energy meter (+0)
+	| Energy is consumed to sate your hunger (+2)
+	| You are heavily weakened when your Energy runs out (-2)
 	Bioweapon (-1)
 	| Villagers fear you. (-1)
 	Bloodbath (+2)
@@ -49,9 +61,11 @@ Powers
 	| You sink like a brick.
 	Climber
 	| You can climb surfaces. (+2)
+	Levels to power (+3)
+	| Your stats are increased based on your level. (+3)
 	Magical (-4)
-	| You cannot eat. (-2)
-	| Your XP is drained to sate you. (+1)
+	| You cannot eat. (-4)
+	| Your XP is drained to sate you. (+3)
 	| Iron harms you. (-3)
 	Magic-bound (-2)
 	| Your XP slowly drains. (-1)
@@ -63,7 +77,7 @@ Powers
 	Powered flight (+2)
 	| You can flap your wings and gain airspeed. (+3)
 	| This causes exhaustion and consumes a flight meter. (-1)
-	Weak
+	Weak (-2)
 	| Your stats are slightly reduced. (-2)
 	Wings (+3)
 	| You have elytra when no chestplate is equipped. (+3)
