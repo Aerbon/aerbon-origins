@@ -1,0 +1,36 @@
+Origins
+	Flugel
+	| +++ Wings
+	| ++ Powered flight
+	| ---- Magical
+	| - Bioweapon
+
+	Lhurgoyf
+	| ++ Bloodbath
+	| / Large
+	| -- Weak
+	
+	Antling
+	| +++ Micro-sized
+	| ++ Climber
+	| -- Eusocial
+
+Powers
+	Athletic (+2)
+	| you have overall better stats.
+	Bioweapon (-1)
+	| villagers fear you.
+	Magical (-4)
+	| You cannot eat. (-2)
+	| Your XP is drained to sate you. (+1)
+	| Iron harms you. (-3)
+	Magic-bound (-2)
+	| Your XP slowly drains. (-1)
+	| Running out of XP kills you. (-2)
+	| You spawn with a couple levels. (+1)
+	Powered flight (+2)
+	| You can flap your wings and gain airspeed. (+3)
+	| This causes exhaustion and consumes a flight meter. (-1)
+	Wings (+3)
+	| You have elytra when no chestplate is equipped. (+3)
+  
