@@ -1,3 +1,10 @@
+Scaling
+	| +0 is a flavorful tweak.
+	| +1 is a small conditional bonus.
+	| +2 is a convenience.
+	| +3 is a major bonus in many stituations.
+	| +4 is an unfair advantage.
+
 Origins
 	Flugel
 	| +++ Wings
@@ -13,13 +20,30 @@ Origins
 	Antling
 	| +++ Micro-sized
 	| ++ Climber
-	| -- Eusocial
+	| -- Weak
+	| --- Squishable
+	
+	Warforged
+	| +++ Harder
+	| +++ Better
+	| +++ Faster
+	| +++ Stronger
+	| ++ Living furnace
+	| + Repairable
+	| ---- Artificial
+	| --- Brick-like
+	| 
 
 Powers
 	Athletic (+2)
-	| you have overall better stats.
+	| you have overall better stats. (+2)
 	Bioweapon (-1)
-	| villagers fear you.
+	| Villagers fear you. (-1)
+	Bloodbath (+2)
+	| You have a Slaughter meter, every kill fills the meter. (+0)
+	| The higher the meter, the stronger you get. (+2)
+	Climber
+	| You can climb surfaces. (+2)
 	Magical (-4)
 	| You cannot eat. (-2)
 	| Your XP is drained to sate you. (+1)
@@ -28,9 +52,13 @@ Powers
 	| Your XP slowly drains. (-1)
 	| Running out of XP kills you. (-2)
 	| You spawn with a couple levels. (+1)
+	Micro-sized (+3)
+	| You are 1/4 normal size. (+1)
+	| You take no velocity or fall damage (+2)
 	Powered flight (+2)
 	| You can flap your wings and gain airspeed. (+3)
 	| This causes exhaustion and consumes a flight meter. (-1)
+	Weak
+	| Your stats are slightly reduced. (-2)
 	Wings (+3)
 	| You have elytra when no chestplate is equipped. (+3)
-  
