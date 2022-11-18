@@ -1,0 +1,32 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+      {
+        "name": "Fast Robot Hands",
+        "attribute": "minecraft:generic.attack_speed",
+        "value": 0.5,
+        "operation": "multiply_base"
+      },
+      {
+        "name": "Powerfull Robot Arms",
+        "attribute": "minecraft:generic.attack_damage",
+        "value": 4,
+        "operation": "addition"
+      },
+      {
+        "name": "Quick Robot Feet",
+        "attribute": "minecraft:generic.movement_speed",
+        "value": 0.05,
+        "operation": "addition"
+      }
+    ],
+    "tick_rate": 20,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "ae_origins:electric_construct_charge",
+      "comparison": ">",
+      "compare_to": 0
+    },
+  "name": "Actuated Limbs",
+  "description": "Harder, Better, Faster, Stronger."
+}

@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "ae_origins:too_hot_for_clothes",
+    "ae_origins:no_chill",
+    "ae_origins:elemental_health",
+    "ae_origins:magma_thrower",
+    "ae_origins:magma_bar",
+    "ae_origins:searing_stone",
+    "ae_origins:fire_immune"
+  ],
+  "icon":"minecraft:magma_block",
+  "order": 5,
+  "impact": 2,
+  "name": "Magma Elemental",
+  "description": "Master of da magma"
+}

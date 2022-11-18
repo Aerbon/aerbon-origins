@@ -1,0 +1,137 @@
+{
+  "type": "origins:multiple",
+  "dampness": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 140,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 1,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "ae_origins:hydrophilic_dampness",
+        "comparison": ">",
+        "compare_to": 0
+      }
+    },
+    "start_value": 0
+  },
+  "sogg_up_water": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "ae_origins:hydrophilic_dampness",
+      "change": 1
+    },
+    "condition": {
+      "type": "origins:fluid_height",
+      "fluid": "minecraft:water",
+      "comparison": ">",
+      "compare_to": 0.2
+    }
+  },
+  "sogg_up_rain": {
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "ae_origins:hydrophilic_dampness",
+      "change": 1
+    },
+    "condition": {
+      "type": "origins:in_rain"
+    }
+  },
+  "dry_down": {
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "ae_origins:hydrophilic_dampness",
+      "change": -1
+    },
+    "condition": {
+      "type": "origins:constant",
+      "value": true
+    }
+  },
+  "ablative_fire_prot": {
+    "type":"origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:name",
+          "name": "onFire"
+        },
+        {
+          "type": "origins:name",
+          "name": "inFire"
+        },
+        {
+          "type": "origins:name",
+          "name": "lava"
+        },
+        {
+          "type": "origins:name",
+          "name": "hotFloor"
+        }
+      ]
+    },
+    "modifier": {
+      "operation": "multiply_total",
+      "value": -1.0
+    },
+    "self_action": {
+      "type": "origins:change_resource",
+      "resource": "ae_origins:hydrophilic_dampness",
+      "change": -2
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "ae_origins:hydrophilic_dampness",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+  "slowdown": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "multiply_base",
+      "value": -0.35,
+      "name": "Soggy Slowdown"
+    },
+    "tick_rate": 20,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "ae_origins:hydrophilic_dampness",
+      "comparison": ">",
+      "compare_to": 40
+    }
+  },
+  "drip": {
+    "type": "origins:particle",
+    "particle": "minecraft:dripping_water",
+    "frequency": 4,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "ae_origins:hydrophilic_dampness",
+      "comparison": ">",
+      "compare_to": 40
+    }
+  },
+  "shake": {
+    "type": "origins:shaking",
+    "condition": {
+      "type": "origins:resource",
+      "resource": "ae_origins:hydrophilic_dampness",
+      "comparison": ">",
+      "compare_to": 60
+    }
+  },
+  "name": "Hydrophilic",
+  "description": "You soak up water and become too heavy, but this can prevent fire damage"
+}

@@ -1,0 +1,29 @@
+{
+  "type": "origins:multiple",
+  "chitin": {
+    "type": "origins:attribute",
+    "modifier": {
+      "name": "Chitinous armour",
+      "attribute": "minecraft:generic.armor",
+      "operation": "addition",
+      "value": 5
+    },
+    "name": "Chitin Plating",
+    "description": "You have natural armor."
+  },
+  "healthreduction": {
+    "type": "origins:attribute",
+    "modifier": {
+      "name": "Frail body",
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": -6
+    }
+  },
+  "arthropodness": {
+    "type": "origins:entity_group",
+    "group": "arthropod"
+  },
+  "name": "Arthropod",
+  "description": "You have natural armor but reduced health. (Also, you are an arthropod)"
+}

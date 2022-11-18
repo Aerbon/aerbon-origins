@@ -1,0 +1,47 @@
+{
+  "type": "origins:multiple",
+  "afraidofheights": {
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -2,
+    "max_stacks": 120,
+    "duration_per_stack": 10,
+    "effects": [
+      {
+        "effect": "minecraft:nausea",
+        "is_ambient": true,
+        "show_particles": false,
+        "show_icon": true
+      },
+      {
+        "effect": "minecraft:slowness",
+        "is_ambient": true,
+        "show_particles": false,
+        "show_icon": true
+      },
+      {
+        "effect": "minecraft:weakness",
+        "is_ambient": true,
+        "show_particles": false,
+        "show_icon": true
+      }
+    ],
+    "condition": {
+      "type": "origins:block_collision",
+      "offset_x": 0,
+      "offset_y": -1,
+      "offset_z": 0,
+      "inverted": true
+    }
+  },
+  "coresleeper": {
+  "type": "origins:prevent_sleep",
+  "block_condition": {
+    "type": "origins:height",
+    "comparison": ">",
+    "compare_to": 0
+  },
+  "message": "you cannot sleep this far from the bedrock"
+},
+  "name": "Earthen Comfort",
+  "description": "You can only sleep at deepslate level or lower, and not touching the ground is nauseating"
+}

@@ -1,0 +1,103 @@
+{
+  "type": "origins:multiple",
+  "heat": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 100,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+      "bar_index": 15,
+      "condition":{
+        "type": "origins:resource",
+        "resource": "ae_origins:overheat_heat",
+        "comparison": ">",
+        "compare_to": 0
+      }
+    },
+    "start_value": 0
+  },
+  "heatup": {
+    "type": "origins:action_over_time",
+    "interval": 30,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "ae_origins:overheat_heat",
+      "change": 1
+    },
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:temperature",
+            "comparison": ">=",
+            "compare_to": 2
+          }
+        },
+        {
+          "type": "origins:block_in_radius",
+          "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "ae_origins:heatsource"
+          },
+          "radius": 3,
+          "shape": "cube",
+          "comparison": ">=",
+          "compare_to": 4
+        }
+      ]
+    }
+  },
+  "cooldown": {
+    "type": "origins:action_over_time",
+    "interval": 40,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "ae_origins:overheat_heat",
+      "change": -1
+    },
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:temperature",
+            "comparison": "<",
+            "compare_to": 1.0
+          }
+        },
+        {
+          "type": "origins:fluid_height",
+          "fluid": "minecraft:water",
+          "comparison": ">=",
+          "compare_to": 0.4
+        }
+      ]
+    }
+  },
+  "burnup": {
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "entity_action": {
+      "type": "origins:damage",
+      "amount": 2,
+      "source": {
+        "name": "onFire",
+        "fire": true,
+        "bypasses_armor": true,
+        "unblockable": true
+      }
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "ae_origins:overheat_heat",
+      "comparison": ">=",
+      "compare_to": 100
+    }
+  },
+  "name": "Overheat",
+  "description": "You slowly overheat when near hot blocks or in hot biomes"
+}

@@ -1,0 +1,15 @@
+{
+  "powers": [
+    "ae_origins:stoneforge",
+    "ae_origins:lithomantic_sleep",
+    "ae_origins:mana",
+    "ae_origins:lithomancy",
+    "ae_origins:stoneproficient",
+    "ae_origins:mana/magma"
+  ],
+  "icon":"minecraft:stone",
+  "order": 5,
+  "impact": 2,
+  "name": "Lithomancer",
+  "description": "Master of da stone"
+}

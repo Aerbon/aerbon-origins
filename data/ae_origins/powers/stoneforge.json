@@ -1,0 +1,155 @@
+{
+  "type": "origins:multiple",
+  "stonecrafting": {
+    "type": "origins:recipe",
+    "recipe": {
+      "id": "ae_origins:lithomancer/stonecrafting",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:cobblestone"
+        }
+      ],
+      "result": {
+        "item": "minecraft:stone"
+      }
+    }
+  },
+  "stoneswordforging": {
+    "type": "origins:recipe",
+    "recipe": {
+      "id": "ae_origins:lithomancer/swordforging",
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#",
+        "#",
+        "C"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:stone"
+        },
+        "C": {
+          "item": "minecraft:cobblestone"
+        }
+      },
+      "result": {
+        "item": "minecraft:stone_sword",
+        "count": 1
+      }
+    }
+  },
+  "stonepickforging": {
+    "type": "origins:recipe",
+    "recipe": {
+      "id": "ae_origins:lithomancer/pickforging",
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        " C ",
+        " C "
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:stone"
+        },
+        "C": {
+          "item": "minecraft:cobblestone"
+        }
+      },
+      "result": {
+        "item": "minecraft:stone_pickaxe",
+        "count": 1
+      }
+    }
+  },
+  "stoneaxeforging": {
+    "type": "origins:recipe",
+    "recipe": {
+      "id": "ae_origins:lithomancer/axeforging",
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "## ",
+        "#C ",
+        " C "
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:stone"
+        },
+        "C": {
+          "item": "minecraft:cobblestone"
+        }
+      },
+      "result": {
+        "item": "minecraft:stone_axe",
+        "count": 1
+      }
+    }
+  },
+  "stonehoeforging": {
+    "type": "origins:recipe",
+    "recipe": {
+      "id": "ae_origins:lithomancer/hoeforging",
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "##",
+        " C",
+        " C"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:stone"
+        },
+        "C": {
+          "item": "minecraft:cobblestone"
+        }
+      },
+      "result": {
+        "item": "minecraft:stone_hoe",
+        "count": 1
+      }
+    }
+  },
+  "stoneshovelforging": {
+    "type": "origins:recipe",
+    "recipe": {
+      "id": "ae_origins:lithomancer/shovelforging",
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#",
+        "C",
+        "C"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:stone"
+        },
+        "C": {
+          "item": "minecraft:cobblestone"
+        }
+      },
+      "result": {
+        "item": "minecraft:stone_shovel",
+        "count": 1
+      }
+    }
+  },
+  "ironcrafting": {
+    "type": "origins:recipe",
+    "recipe": {
+      "id": "ae_origins:lithomancer/ironcrafting",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:iron_ore"
+        }
+      ],
+      "result": {
+        "item": "minecraft:iron_ingot"
+      }
+    }
+  },
+  "name": "Stoneforge",
+  "description": "You can craft stone from cobble and craft or uncraft tools from stone. stone tools are extra effective when held by you."
+}

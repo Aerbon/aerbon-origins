@@ -1,0 +1,29 @@
+{
+  "type": "origins:multiple",
+  "getrock": {
+    "type": "origins:modify_harvest",
+    "allow": true,
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "ae_origins:stone"
+    }
+  },
+  "digrockfast": {
+    "type": "origins:modify_break_speed",
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "ae_origins:stone"
+    },
+    "condition": {
+      "type": "origins:constant",
+      "value": true
+    },
+    "modifier": {
+      "name": "Lithomancy stone break speed bonus",
+      "value": 0.2,
+      "operation": "addition"
+    }
+  },
+  "name": "Lithomancy",
+  "description": "You can dig all types of stone very fast with your fists"
+}

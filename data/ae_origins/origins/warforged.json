@@ -1,0 +1,13 @@
+{
+  "powers": [
+    "ae_origins:tungsten_body",
+    "ae_origins:electric_construct",
+    "ae_origins:actuated_limbs",
+    "ae_origins:overheat"
+  ],
+  "icon":"minecraft:iron_sword",
+  "order": 5,
+  "impact": 1,
+  "name": "Warforged",
+  "description": "beep boop"
+}

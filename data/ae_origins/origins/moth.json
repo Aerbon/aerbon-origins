@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "ae_origins:fluffy",
+    "ae_origins:arthropod",
+    "ae_origins:frailwings",
+    "ae_origins:poweredflight",
+    "ae_origins:hydrophilic",
+    "ae_origins:clotheater",
+    "ae_origins:weaklegs"
+  ],
+  "icon":"minecraft:white_wool",
+  "order": 5,
+  "impact": 3,
+  "name": "Mothling",
+  "description": "The Mothlings are a species of giant arthropod capable of flight but weak to the elements"
+}

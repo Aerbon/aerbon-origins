@@ -1,0 +1,102 @@
+{
+  "type": "origins:multiple",
+  "flightbar": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 20,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 4,
+      "condition": {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:resource",
+            "resource": "ae_origins:poweredflight_flightbar",
+            "comparison": "<",
+            "compare_to": 20
+          },
+          {
+            "type": "origins:fall_flying"
+          }
+        ]
+      }
+    },
+    "start_value": 20
+  },
+  "flutter": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:add_velocity",
+          "space": "local",
+          "set": false,
+          "z": 0.8
+        },
+        {
+          "type": "origins:exhaust",
+          "amount": 2
+        },
+        {
+          "type": "origins:change_resource",
+          "resource": "ae_origins:poweredflight_flightbar",
+          "change": -5
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.ender_dragon.flap"
+        }
+      ]
+    },
+    "cooldown": 15,
+    "key": {
+      "key": "key.jump",
+      "continuous": true
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "ae_origins:poweredflight_flightbar",
+          "comparison": ">",
+          "compare_to": 4
+        },
+        {
+          "type": "origins:fall_flying"
+        }
+      ]
+    }
+  },
+  "recharge": {
+    "type": "origins:action_over_time",
+    "interval": 4,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "ae_origins:poweredflight_flightbar",
+      "change": 1
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "ae_origins:poweredflight_flutter",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:resource",
+          "resource": "ae_origins:poweredflight_flightbar",
+          "comparison": "<",
+          "compare_to": 20
+        }
+      ]
+    }
+  },
+  "name": "powered flight",
+  "description": "You can flap your wings to gain airspeed"
+}

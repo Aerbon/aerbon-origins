@@ -1,0 +1,11 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+    "name": "Chitinous armour",
+    "attribute": "minecraft:generic.armor",
+    "operation": "addition",
+    "value": 10
+  },
+  "name": "Insectoid",
+  "description": "You have some natural armor but your health is reduced by 4 hearts."
+}

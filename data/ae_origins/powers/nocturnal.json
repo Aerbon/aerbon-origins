@@ -1,0 +1,24 @@
+{
+  "type": "origins:multiple",
+  "dayview": {
+    "type": "origins:shader",
+    "shader": "minecraft:shaders/post/blobs2.json",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:exposed_to_sun"
+        },
+        {
+          "type": "origins:daytime"
+        }
+      ]
+    }
+  },
+  "nightview": {
+    "type": "origins:night_vision",
+    "strength": 0.75
+  },
+  "name": "Nocturnal",
+  "description": "you can see well i the dark, but are blinded in bright areas"
+}
