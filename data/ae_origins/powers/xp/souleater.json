@@ -1,0 +1,46 @@
+{
+	"type": "origins:multiple",
+	"low_prevents_heal": {
+		"type": "origins:disable_regen",
+		"condition": {
+			"type": "origins:xp_levels",
+			"comparison": "<",
+			"compare_to": 4
+		}
+	},
+	"starvation": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:damage",
+			"amount": 1,
+			"source": {
+				"name": "starve",
+				"bypasses_armor": true,
+				"unblockable": true
+			}
+		},
+		"interval": 20,
+		"condition": {
+			"type": "origins:xp_points",
+			"comparison": "<=",
+			"compare_to": 0
+		}
+	},
+	"loss": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "xp add @s -1 points"
+		},
+		"interval": 120
+	},
+	"restore_on_respawn": {
+		"type": "origins:action_on_callback",
+		"entity_action_respawned": {
+			"type": "origins:add_xp",
+			"levels": 5
+		}
+	},
+	"name": "Soul eater",
+	"description": "You require XP to live"
+}

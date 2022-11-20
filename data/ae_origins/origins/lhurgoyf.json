@@ -1,0 +1,12 @@
+{
+    "powers": [
+      "ae_origins:bloodbath",
+      "ae_origins:corpse_eater",
+      "ae_origins:weak"
+    ],
+    "icon":"minecraft:rotten_flesh",
+    "order": 5,
+    "impact": 2,
+    "name": "Lhurgoyf",
+    "description": "A dreadfull species which feeds off corpses, gaining power as it sates its endless hunger."
+}

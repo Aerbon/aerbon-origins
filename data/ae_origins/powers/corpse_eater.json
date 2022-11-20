@@ -1,0 +1,19 @@
+{
+	"type": "origins:multiple",
+	"yes": {
+		"type": "origins:self_action_on_kill",
+		"entity_action": {
+			"type": "origins:feed",
+			"food": 2,
+			"saturation": 4
+		}
+	},
+		"no": {
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:food"
+		}
+	},
+	"name": "Corpse Eater",
+	"description": "You can't eat. Fill your hunger bar by slaying creatures."
+}
