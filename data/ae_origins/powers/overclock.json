@@ -1,0 +1,65 @@
+{
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "stats": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "name": "Overclocked damage",
+                "attribute": "minecraft:generic.attack_damage",
+                "value": 1.0,
+                "operation": "multiply_total"
+            },
+            {
+                "name": "Overclocked speed",
+                "attribute": "minecraft:generic.movement_speed",
+                "value": 1.0,
+                "operation": "multiply_total"
+            },
+            {
+                "name": "Overclocked attack speed",
+                "attribute": "minecraft:generic.attack_speed",
+                "value": 1.0,
+                "operation": "multiply_total"
+            }
+        ],
+        "condition": {
+            "type": "origins:power_active",
+            "power": "ae_origins:overclock_toggle"
+        }
+    },
+    "heat": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "ae_origins:overheat_v2_meter",
+            "change": 1
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "ae_origins:overclock_toggle"
+        }
+    },
+    "sound": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"entity_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.warden.heartbeat",
+            "volume": 0.5
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "ae_origins:overclock_toggle"
+        }
+	},
+    "name": "Overclock",
+    "description": "While active double your damage, speed and attack speed, but rapidly increases heat."
+}

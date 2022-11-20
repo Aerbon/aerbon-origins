@@ -1,0 +1,31 @@
+{
+	"type": "origins:multiple",
+	"no_regen": {
+        "type": "origins:disable_regen"
+    },
+		"noeathoomanfood": {
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:food"
+		}
+	},
+    "stats": {
+		"type": "origins:attribute",
+        "modifiers": [
+            {
+                "name": "Golem health",
+                "attribute": "minecraft:generic.max_health",
+                "value": 20,
+                "operation": "addition"
+            },
+            {
+                "name": "Golem armor",
+                "attribute": "minecraft:generic.armor",
+                "value": 10,
+                "operation": "addition"
+            }
+        ]
+	},
+	"name": "Golem",
+	"description": "You can't eat. You have no natural hp regen. Your base health is increased by 20 points and your armor by 10."
+}

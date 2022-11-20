@@ -1,0 +1,52 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:equipped_item_action",
+                "equipment_slot": "mainhand",
+                "action": {
+                    "type": "origins:consume",
+                    "amount": 1
+                }
+            },
+            {
+                "type": "origins:heal",
+                "amount": 4
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.anvil.use",
+                "volume": 1
+            }
+        ]
+    },
+    "cooldown": 20,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:relative_health",
+                "comparison": "<",
+                "compare_to": 1.0
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:iron_ingot"
+                    }
+                }
+            }
+        ]
+    },
+    "key": {
+        "key": "key.use",
+        "continuous": true
+    },
+    "name": "Self repair",
+    "description": "Consume iron ingots to refill your health"
+}
