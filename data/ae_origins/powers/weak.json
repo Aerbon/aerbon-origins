@@ -1,0 +1,19 @@
+{
+    "type": "origins:attribute",
+    "modifiers": [
+        {
+            "name": "Max health decrease",
+            "attribute": "minecraft:generic.max_health",
+            "value": -0.2,
+            "operation": "multiply_base"
+        },
+        {
+            "name": "Attack damage decrease",
+            "attribute": "minecraft:generic.attack_damage",
+            "value": -0.2,
+            "operation": "multiply_base"
+        }
+    ],
+    "name": "Weak",
+    "description": "You have reduced base health and damage."
+}
