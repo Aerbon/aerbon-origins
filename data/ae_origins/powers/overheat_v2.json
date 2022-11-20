@@ -82,7 +82,7 @@
 		"entity_action": {
 			"type": "origins:change_resource",
 			"resource": "ae_origins:overheat_v2_meter",
-			"change": -80
+			"change": -120
 		},
 		"item_condition": {
 			"type": "origins:and",
