@@ -1,0 +1,17 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.autoSave": "off",
+        "editor.renderWhitespace": "boundary",
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.minimap.renderCharacters": false,
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": false
+    }
+}

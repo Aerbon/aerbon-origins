@@ -1,0 +1,183 @@
+{
+	"name": "Anima",
+	"description": "Your physical form is a projection of your soul. You eat XP, skulk eats you, mending equipment eats you, wearing low enchantability armor weakens you.",
+	"type": "origins:multiple",
+	"eat-xp": {
+		"name": "Soul Eating",
+		"description": "You eat from your XP bar. This does not grant saturation.",
+		"type": "origins:action_over_time",
+		"interval": 2,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:xp_points",
+					"comparison": ">",
+					"compare_to": 5
+				},
+				{
+					"type": "origins:food_level",
+					"comparison": "<",
+					"compare_to": 20
+				}
+			]
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:feed",
+					"food": 1,
+					"saturation": 0
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "xp add @s -5 points"
+				}
+			]
+		}
+	},
+	"no_eating": {
+		"name": "No Eating",
+		"description": "you cannot eat.",
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:food"
+		}
+	},
+	"skulk_weakness": {
+		"name": "Skulk Weakness",
+		"description": "You are damaged when standing on skulk. You take extra damage from wardens.",
+		"type": "origins:multiple",
+		"standing": {
+			"type": "origins:action_over_time",
+			"interval": 40,
+			"condition": {
+				"type": "origins:on_block",
+				"block_condition": {
+					"type": "origins:in_tag",
+					"tag": "aec:skulk"
+				}
+			}
+		},
+		"getting_hit": {
+			"type": "origins:modify_damage_taken",
+			"damage_condition": {
+				"type": "origins:attacker",
+				"entity_condition": {
+					"type": "origins:entity_type",
+					"entity_type": "minecraft:warden"
+				}
+			},
+			"modifier": {
+				"name": "Weak to skulk",
+				"operation": "addition",
+				"value": 4
+			}
+		}
+	},
+	"mending_weakness": {
+		"name": "Weak to mending",
+		"description": "Mending eats away at you.",
+		"type": "origins:multiple",
+		"when_hit": {
+			"type": "origins:modify_damage_taken",
+			"damage_condition": {
+				"type": "origins:attacker",
+				"entity_condition": {
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"tag": "ae_origins:low_enchantability_tools"
+						}
+					}
+				}
+			},
+			"modifier": {
+				"name": "Weak to mending",
+				"operation": "addition",
+				"value": 4
+			}
+		},
+		"when_equipped": {
+			"type": "origins:action_over_time",
+			"interval": 40,
+			"condition": {
+				"type": "origins:or",
+				"conditions": [
+					{
+						"type": "origins:equipped_item",
+						"equipment_slot": "head",
+						"item_condition": {
+							"type": "origins:enchantment",
+							"enchantment": "minecraft:mending",
+							"comparison": ">",
+							"compare_to": 0
+						}
+					},
+					{
+						"type": "origins:equipped_item",
+						"equipment_slot": "chest",
+						"item_condition": {
+							"type": "origins:enchantment",
+							"enchantment": "minecraft:mending",
+							"comparison": ">",
+							"compare_to": 0
+						}
+					},
+					{
+						"type": "origins:equipped_item",
+						"equipment_slot": "legs",
+						"item_condition": {
+							"type": "origins:enchantment",
+							"enchantment": "minecraft:mending",
+							"comparison": ">",
+							"compare_to": 0
+						}
+					},
+					{
+						"type": "origins:equipped_item",
+						"equipment_slot": "feet",
+						"item_condition": {
+							"type": "origins:enchantment",
+							"enchantment": "minecraft:mending",
+							"comparison": ">",
+							"compare_to": 0
+						}
+					},
+					{
+						"type": "origins:equipped_item",
+						"equipment_slot": "mainhand",
+						"item_condition": {
+							"type": "origins:enchantment",
+							"enchantment": "minecraft:mending",
+							"comparison": ">",
+							"compare_to": 0
+						}
+					},
+					{
+						"type": "origins:equipped_item",
+						"equipment_slot": "offhand",
+						"item_condition": {
+							"type": "origins:enchantment",
+							"enchantment": "minecraft:mending",
+							"comparison": ">",
+							"compare_to": 0
+						}
+					}
+				]
+			},
+			"entity_action": {
+				"type": "origins:damage",
+				"amount": 1,
+				"source": {
+					"name": "soulDrain",
+					"bypasses_armor": true,
+					"magic": true
+				}
+			}
+		}
+	}
+}

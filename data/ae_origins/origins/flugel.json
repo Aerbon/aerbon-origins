@@ -1,0 +1,13 @@
+{
+    "powers": [
+      "ae_origins:wings",
+      "ae_origins:poweredflight",
+      "ae_origins:anima",
+      "ae_origins:evolution/flugel"
+    ],
+    "icon":"minecraft:enchanted_book",
+    "order": 5,
+    "impact": 3,
+    "name": "Flügel",
+    "description": "An ancient living weapon created by a warring god. Weakened after millenia of slumber, it must now regain what it has lost...\nThis origin is weaker, but can evolve."
+}
