@@ -1,3 +1,6 @@
+# WARNING
+This is very much in alpha. i have made it public so my friends can easily download it if they want to. I push all my stuff to the main branch. Stuff may be broken or incomplete. I may add and remove stuff without warning.
+
 # Aerbon Origins
 A set of fun origins, balanced arround the standard steve such that human remains a sensible pick.
 
