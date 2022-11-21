@@ -33,12 +33,17 @@ Origins
 	| / Arthropod
 	| -- Weak
 	| --- Squishable
+
+	Summoner
+	| ++ Contract magic
+	| -- Weak
 	
 	Warforged
-	| ++++ Herculean
+	| ++++ Superhuman
 	| ++++ Built like a tank
 	| ++ Living furnace
-	| + Repairable
+	| ++++ Repairable
+	| --- Overheat
 	| -8 Artificial
 	| --- Brick-like
 
@@ -74,9 +79,18 @@ Powers
 	Micro-sized (+3)
 	| You are 1/4 normal size. (+1)
 	| You take no velocity or fall damage (+2)
+	Overheat
+	| You have a heat meter (+0)
+	| You build up heat as you gain exhaustion (-3)
+	| You take damage if you overheat (-3)
+	| You can reduce heat by standing still (+1)
+	| You can reduce heat by consuming cold items (+2)
+	| You gain or lose heat based on the ambient (+0)
 	Powered flight (+2)
 	| You can flap your wings and gain airspeed. (+3)
 	| This causes exhaustion and consumes a flight meter. (-1)
+	Repairable (+4)
+	| You can heal yourself by consuming iron ingots (+4)
 	Weak (-2)
 	| Your stats are slightly reduced. (-2)
 	Wings (+3)
