@@ -17,14 +17,6 @@
 			}
 		]
 	},
-	"jump": {
-		"type": "origins:modify_jump",
-		"entity_action": {
-			"type": "origins:add_velocity",
-			"z": 0.5,
-			"space": "local"
-		}
-	},
 	"name": "Apex",
-	"description": "You get 30% increased base speed and damage. You get an improved jump."
+	"description": "You get 30% increased base speed and damage."
 }

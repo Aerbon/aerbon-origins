@@ -1,6 +1,6 @@
 {
 	"name": "Anima",
-	"description": "Your physical form is a projection of your soul. You eat XP, skulk eats you, mending equipment eats you, wearing low enchantability armor weakens you.",
+	"description": "Your physical form is a projection of your soul. You eat XP, skulk eats you, mending equipment eats you.",
 	"type": "origins:multiple",
 	"eat-xp": {
 		"name": "Soul Eating",
