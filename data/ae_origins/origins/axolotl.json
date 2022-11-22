@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"origins:aquatic",
+		"origins:fins",
+		"origins:water_breathing",
+		"origins:aqua_affinity",
+		"ae_origins:size/tiny"
+	],
+	"icon": "minecraft:axolotl_bucket",
+	"order": 5,
+	"impact": 3,
+	"name": "Axolotlyd",
+	"description": "Like the merling, but smol."
+}
