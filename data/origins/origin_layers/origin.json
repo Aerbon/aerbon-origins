@@ -1,10 +1,20 @@
 {
-  "replace": false,
-  "origins": [
-    "ae_origins:moth",
-    "ae_origins:lithomancer",
-    "ae_origins:warforged",
-    "ae_origins:lhurgoyf",
-    "ae_origins:warforged_v2"
-  ]
+	"replace": false,
+	"origins": [
+		{
+			"condition": {
+				"type": "origins:constant",
+				"value": false
+			},
+			"origins": [
+				"ae_origins:warforged",
+				"ae_origins:flugel",
+				"ae_origins:axolotl"
+			]
+		},
+		"ae_origins:moth",
+		"ae_origins:lithomancer",
+		"ae_origins:lhurgoyf",
+		"ae_origins:warforged_v2"
+	]
 }
