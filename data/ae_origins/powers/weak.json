@@ -5,7 +5,7 @@
             "name": "Max health decrease",
             "attribute": "minecraft:generic.max_health",
             "value": -8,
-            "operation": "multiply_base"
+            "operation": "addition"
         },
         {
             "name": "Attack damage decrease",
