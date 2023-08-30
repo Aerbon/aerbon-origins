@@ -13,7 +13,7 @@
 				{
 					"type": "origins:xp_points",
 					"comparison": ">",
-					"compare_to": 5
+					"compare_to": 0
 				},
 				{
 					"type": "origins:food_level",
@@ -32,7 +32,7 @@
 				},
 				{
 					"type": "origins:execute_command",
-					"command": "xp add @s -5 points"
+					"command": "xp add @s -1 points"
 				}
 			]
 		}

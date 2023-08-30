@@ -52,7 +52,7 @@
 		"entity_action": {
 			"type": "origins:change_resource",
 			"resource": "ae_origins:overheat_v2_meter",
-			"change": 5
+			"change": 1
 		}
 	},
 	"chill": {

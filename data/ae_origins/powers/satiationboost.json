@@ -1,200 +1,173 @@
 {
 	"type": "origins:multiple",
-	"meter": {
-		"type": "origins:resource",
-		"min": 0,
-		"max": 140,
-		"hud_render": {
-			"should_render": true,
-			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
-			"bar_index": 1
-		}
-	},
-	"gain": {
-		"type": "origins:self_action_on_kill",
-		"entity_action": {
-			"type": "origins:change_resource",
-			"resource": "ae_origins:bloodbath_meter",
-			"change": 20
-		}
-	},
-	"drain": {
-		"type": "origins:action_over_time",
-		"interval": 60,
-		"entity_action": {
-			"type": "origins:change_resource",
-			"resource": "ae_origins:bloodbath_meter",
-			"change": -1
-		}
-	},
 	"l1": {
 		"type": "origins:conditioned_attribute",
 		"modifiers": [
 			{
 				"attribute": "minecraft:generic.max_health",
-				"operation": "addition",
-				"value": 4,
+				"operation": "multiply_total",
+				"value": 0.15,
 				"name": "Bloodrush Health"
 			},
 			{
 				"attribute": "minecraft:generic.attack_damage",
-				"operation": "addition",
-				"value": 1,
+				"operation": "multiply_total",
+				"value": 0.15,
 				"name": "Bloodrush Strength"
 			}
 		],
 		"tick_rate": 20,
 		"condition": {
-			"type": "origins:resource",
-			"resource": "ae_origins:bloodbath_meter",
+			"type": "origins:food_level",
 			"comparison": ">",
-			"compare_to": 0
-		}
+			"compare_to": 7
+		},
+		"update_health": false
 	},
 	"l2": {
 		"type": "origins:conditioned_attribute",
 		"modifiers": [
 			{
 				"attribute": "minecraft:generic.max_health",
-				"operation": "addition",
-				"value": 4,
+				"operation": "multiply_total",
+				"value": 0.15,
 				"name": "Bloodrush Health"
 			},
 			{
 				"attribute": "minecraft:generic.attack_damage",
-				"operation": "addition",
-				"value": 1,
+				"operation": "multiply_total",
+				"value": 0.15,
 				"name": "Bloodrush Strength"
 			}
 		],
 		"tick_rate": 20,
 		"condition": {
-			"type": "origins:resource",
-			"resource": "ae_origins:bloodbath_meter",
+			"type": "origins:food_level",
 			"comparison": ">",
-			"compare_to": 20
-		}
+			"compare_to": 9
+		},
+		"update_health": false
 	},
 	"l3": {
 		"type": "origins:conditioned_attribute",
 		"modifiers": [
 			{
 				"attribute": "minecraft:generic.max_health",
-				"operation": "addition",
-				"value": 4,
+				"operation": "multiply_total",
+				"value": 0.15,
 				"name": "Bloodrush Health"
 			},
 			{
 				"attribute": "minecraft:generic.attack_damage",
-				"operation": "addition",
-				"value": 1,
+				"operation": "multiply_total",
+				"value": 0.1,
 				"name": "Bloodrush Strength"
 			}
 		],
 		"tick_rate": 20,
 		"condition": {
-			"type": "origins:resource",
-			"resource": "ae_origins:bloodbath_meter",
+			"type": "origins:food_level",
 			"comparison": ">",
-			"compare_to": 40
-		}
+			"compare_to": 11
+		},
+		"update_health": false
 	},
 	"l4": {
 		"type": "origins:conditioned_attribute",
 		"modifiers": [
 			{
 				"attribute": "minecraft:generic.max_health",
-				"operation": "addition",
-				"value": 4,
+				"operation": "multiply_total",
+				"value": 0.15,
 				"name": "Bloodrush Health"
 			},
 			{
 				"attribute": "minecraft:generic.attack_damage",
-				"operation": "addition",
-				"value": 1,
+				"operation": "multiply_total",
+				"value": 0.1,
 				"name": "Bloodrush Strength"
 			}
 		],
 		"tick_rate": 20,
 		"condition": {
-			"type": "origins:resource",
-			"resource": "ae_origins:bloodbath_meter",
+			"type": "origins:food_level",
 			"comparison": ">",
-			"compare_to": 60
-		}
+			"compare_to": 13
+		},
+		"update_health": false
 	},
 	"l5": {
 		"type": "origins:conditioned_attribute",
 		"modifiers": [
 			{
 				"attribute": "minecraft:generic.max_health",
-				"operation": "addition",
-				"value": 4,
+				"operation": "multiply_total",
+				"value": 0.15,
 				"name": "Bloodrush Health"
 			},
 			{
 				"attribute": "minecraft:generic.attack_damage",
-				"operation": "addition",
-				"value": 1,
+				"operation": "multiply_total",
+				"value": 0.15,
 				"name": "Bloodrush Strength"
 			}
 		],
 		"tick_rate": 20,
 		"condition": {
-			"type": "origins:resource",
-			"resource": "ae_origins:bloodbath_meter",
+			"type": "origins:food_level",
 			"comparison": ">",
-			"compare_to": 80
-		}
+			"compare_to": 15
+		},
+		"update_health": false
 	},
 	"l6": {
 		"type": "origins:conditioned_attribute",
 		"modifiers": [
 			{
 				"attribute": "minecraft:generic.max_health",
-				"operation": "addition",
-				"value": 4,
+				"operation": "multiply_total",
+				"value": 0.15,
 				"name": "Bloodrush Health"
 			},
 			{
 				"attribute": "minecraft:generic.attack_damage",
-				"operation": "addition",
-				"value": 1,
+				"operation": "multiply_total",
+				"value": 0.15,
 				"name": "Bloodrush Strength"
 			}
 		],
 		"tick_rate": 20,
 		"condition": {
-			"type": "origins:resource",
-			"resource": "ae_origins:bloodbath_meter",
+			"type": "origins:food_level",
 			"comparison": ">",
-			"compare_to": 100
-		}
+			"compare_to": 17
+		},
+		"update_health": false
 	},
 	"l7": {
 		"type": "origins:conditioned_attribute",
 		"modifiers": [
 			{
 				"attribute": "minecraft:generic.max_health",
-				"operation": "addition",
-				"value": 4,
+				"operation": "multiply_total",
+				"value": 0.15,
 				"name": "Bloodrush Health"
 			},
 			{
 				"attribute": "minecraft:generic.attack_damage",
-				"operation": "addition",
-				"value": 1,
+				"operation": "multiply_total",
+				"value": 0.15,
 				"name": "Bloodrush Strength"
 			}
 		],
 		"tick_rate": 20,
 		"condition": {
-			"type": "origins:resource",
-			"resource": "ae_origins:bloodbath_meter",
+			"type": "origins:food_level",
 			"comparison": ">",
-			"compare_to": 120
-		}
+			"compare_to": 19
+		},
+		"update_health": false
 	},
-	"name": "Bloodbath",
-	"description": "You get increased health and damage for each kill in the last few minutes. Stacks to 7."
+    "name": "Satiataion boost",
+    "description": "You get 15% increased health and damage for each food shank after the third."
 }
