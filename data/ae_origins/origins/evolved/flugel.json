@@ -1,0 +1,12 @@
+{
+    "powers": [
+        "origins:elytra",
+        "ae_origins:poweredflight",
+        "ae_origins:anima_mastered"
+    ],
+    "icon": "minecraft:enchanted_book",
+    "order": 5,
+    "impact": 3,
+    "name": "True Flügel [Evolved]",
+    "description": "An ancient living weapon created by a warring god. "
+}

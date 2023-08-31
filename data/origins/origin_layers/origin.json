@@ -9,7 +9,8 @@
 			"origins": [
 				"ae_origins:warforged",
 				"ae_origins:flugel",
-				"ae_origins:axolotl"
+				"ae_origins:axolotl",
+				"ae_origins:evolved/flugel"
 			]
 		},
 		"ae_origins:moth",

@@ -5,10 +5,10 @@
     "ae_origins:frailwings",
     "ae_origins:poweredflight",
     "ae_origins:hydrophilic",
-    "ae_origins:clotheater",
+    "ae_origins:cloth_eater",
     "ae_origins:weaklegs"
   ],
-  "icon":"minecraft:white_wool",
+  "icon": "minecraft:white_wool",
   "order": 5,
   "impact": 3,
   "name": "Mothling",

@@ -58,6 +58,15 @@
 					"type": "origins:in_tag",
 					"tag": "aec:skulk"
 				}
+			},
+			"entity_action": {
+				"type": "origins:damage",
+				"amount": 1,
+				"source": {
+					"name": "soulDrain",
+					"bypasses_armor": true,
+					"magic": true
+				}
 			}
 		},
 		"getting_hit": {
@@ -90,7 +99,10 @@
 					"item_condition": {
 						"type": "origins:ingredient",
 						"ingredient": {
-							"tag": "ae_origins:low_enchantability_tools"
+							"type": "origins:enchantment",
+							"enchantment": "minecraft:mending",
+							"comparison": ">",
+							"compare_to": 0
 						}
 					}
 				}
